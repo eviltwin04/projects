@@ -1,0 +1,43 @@
+/* Structural Pseudo-classes------------------ */
+li:first-child {
+    background: #52bab3;
+    color: white;
+}
+
+li:last-child {
+    border: none;
+}
+
+:only-child {
+    color: #52bab3;
+    font-size: 1.5em;
+}
+
+:empty {
+    background-color: tomato;
+}
+
+/* :nth-child Pseudo-classes------------------ */
+
+li:nth-child(even) {
+  background: #52bab3;
+  color: white;
+} /* values can be odd,even, numbers, expressions such as the following 
+
+li:nth-child(an+b) {
+  background: #52bab3;
+  color: white:
+  
+  where a and b represent numbers and n is the letter n
+
+  b is the first value that we want to select, a is the cycle of elements to select after the b, and n just functions as a counter
+
+  (2n+3) would be valid and wouldfirst target the third, then the second
+
+  (n+4) is the same as (1n+4) likewise 0b is the same as just (3n) and you can omit the b value
+  */
+
+  img:nth(3n+4) {
+    float: none;
+  }
+  

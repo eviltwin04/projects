@@ -1,0 +1,11 @@
+/* Structural Pseudo-classes------------------ */
+
+div:nth-of-type(4) {
+    background: #52bab3;
+    color: white;
+  }
+
+/*This will only target the fourth div
+
+other values are nth-last-of-type*/
+  

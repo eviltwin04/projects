@@ -1,0 +1,53 @@
+/* Base Styles -------------------------------- */
+
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5;
+	color: #e023b7;
+	padding: 10px 0 80px;
+}
+div {
+	max-width: 610px;
+	margin: auto;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+li {
+	margin-bottom: 14px;
+}
+a {
+	color: #4183c4;
+}
+
+/* Substring Matching Attribute Selectors ---- */
+
+a[href^="http://"] {
+	color: #52bab3;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	padding-left: 25px;
+} /*targets only attributes beginning with the value in quotes, in this case http. The ^ is what tells it beginning*/
+
+a[href$=".pdf"] {
+	background-image: url('https://github.com/eviltwin04/projects/blob/master/CSS_tutorials/substring_matching_attribute_selectors/img/PDF.png');
+} /*targets only attributes ending with the value in quotes, in this case, the file extension. The $ is what tells it end*/
+
+a[href*="download"] {
+	background-repeat: none;
+	background-size: 18px 18px;
+	padding-left: 25px;
+} /*targets attributes containing the value in quotes, in this case, the word "download". The * is what tells it contains*/
+
+img[src*="img"] {
+	margin: 4px;
+	border: solid 2px;
+	width: 180px;
+	height: 140px;
+}
+
+img[src*="tree"] {
+	border-color: green;
+}

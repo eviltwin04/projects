@@ -1,0 +1,14 @@
+/* Complete the challenge by writing CSS below */
+.main-nav li:first-child {
+    border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    
+    .main-nav li:last-child {
+    border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    

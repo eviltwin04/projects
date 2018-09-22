@@ -1,0 +1,36 @@
+
+:root {
+    background: #e3effb;
+}
+/*root will always target the root element of a document, which is typically your <html> element*/
+
+:target {
+    background: #384047;
+    color: white;
+}
+
+#col-c:target {
+    background-color: #eff1f2;
+    color: initial;
+    box-shadow: 0 0 6px  rgba(0,0,0,.2);
+}
+
+input:not([type="submit"]) {
+    box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
+}
+/*This says target all eolements EXCEPT  what is in the parenthesis
+
+other acceptable syntax is 
+
+div:not()#col-a) {
+    border: solid 1px red;
+}*/
+
+.col:not(:first-child),
+nav a:not(:first-child) {
+    margin-left: 15px;
+}
+
+/*the following link teaches you how to make an animation using the css target attriblute
+https://codepen.io/Guilh/pen/QwvxOp */
+
