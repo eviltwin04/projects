@@ -1,0 +1,53 @@
+/* Pseudo-elements -------------------------------- */
+
+.intro::first-line {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.intro::first-letter {
+    font-weight: bold;
+    font-size: 80px;
+    float: left;
+    color: white;
+    padding: 5px 10px;
+    background: #384047;
+    font-family: "fantasy";
+    font-style: italic;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    line-height: 1;
+
+}
+
+.jpg::after {
+    content: url(img/pdf.jpg);
+    margin-right: 8px;
+   
+    
+}
+/* the contact element is necessary to displaythese pseudo-elements*/
+
+h1::before,
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: coral;
+    margin: 0 10px;
+
+}
+
+.d-loads a::after {
+    content: attr(title); /* or try content: attr(href);*/
+    display: inline-block;
+    color: initial;
+    font-size: .65em;
+    margin-left: 5px;
+}
+
+.d-loads a {
+    border: solid 1px;
+}
