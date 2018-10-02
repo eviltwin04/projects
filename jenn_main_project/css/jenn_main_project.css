@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 
-.wrapper {
+.mountains {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -36,10 +36,11 @@ body {
 
 /*Layout Containers*/
 
-     .wrapper {
+     .mountains {
       width: 70%;
       margin: 0 auto;
     }
+    
     .main-header {
       background: rgb(135, 171, 212);
       color: aliceblue;
@@ -53,10 +54,33 @@ body {
       color: aliceblue;
     }
 
+    /* Container holding the image and the text */
+.main_picture {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+/* Main_nav */
+.main_nav {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
     /*Media*/
 
     @media screen and (max-width: 1024px) { /* Specific to this particular image */
-      .main_photo {
+      .main_picture {
         left: 50%;
         margin-left: -512px;   /* 50% */
       }
@@ -64,12 +88,12 @@ body {
 
     @media (min-width: 769px) {
      
-      .wrapper {
+      .main_picture {
        width: 70%;
        max-width: 1000px;
        margin: 20px;}
 
-       .wrap {
+       .wrapper {
          min-height: 100vh;
 
        }
