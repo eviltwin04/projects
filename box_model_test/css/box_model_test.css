@@ -1,0 +1,13 @@
+/*Base Styles*/
+
+.frame {
+  background-color: darkmagenta;
+}
+
+/*Main Styles*/
+
+.frame {
+    background-color: darkmagenta;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%
+  }
