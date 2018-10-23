@@ -347,8 +347,9 @@
    * Remove Default List Styles magrins, padding, etc
    */
    ol,
-   ul {
+  {
        margin: 0;
        padding: 0;
-       list-style: none;
+       list-style-type: none;
+       
    }

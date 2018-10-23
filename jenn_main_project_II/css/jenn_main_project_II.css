@@ -1,3 +1,22 @@
+
+.main-nav {
+	display: flex;
+	flex-direction: row;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+  background-color: #36384c;
+}
+
+.resume {
+  color:#36384c;
+}
+
+#title {
+  margin-top: 2em;
+}
+
 /* Base Styles -------------------- */
 
 * {
@@ -5,33 +24,32 @@
   }
   
   body {
-    color: #878787;
     margin: 0;
-    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 1em/1.5 Arial;
   }
   
   h1, 
   h2 {
-  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   }
   
   h1 {  
     font-size: 5.625rem; /* 90px/16px  */
-    color: rgba(255, 255, 255, 1);
+    color: #e3bab3;
     font-weight: normal;
     line-height: 1.3;
-    text-shadow: 0 1px 0 #ccc,
-                 0 2px 0 #c9c9c9,
-                 0 3px 0 #bbb,
-                 0 4px 0 #b9b9b9,
-                 0 5px 0 #aaa,
-                 0 6px 1px rgba(0,0,0,.1),
-                 0 0 5px rgba(0,0,0,.1),
-                 0 1px 3px rgba(0,0,0,.3),
-                 0 3px 5px rgba(0,0,0,.2),
-                 0 5px 10px rgba(0,0,0,.25),
-                 0 10px 10px rgba(0,0,0,.2),
-                 0 20px 20px rgba(0,0,0,.15);
+    text-shadow: 0 1px 0 #e3bab3,
+                 0 2px 0 #e3bab3,
+                 0 3px 0 #e3bab3,
+                 0 4px 0 #e3bab3,
+                 0 5px 0 #e3bab3,
+                 0 6px 1px #613a43,
+                 0 0 5px #613a43,
+                 0 1px 3px  #613a43,
+                 0 3px 5px  #613a43,
+                 0 5px 10px  #613a43,
+                 0 10px 10px  #613a43,
+                 0 20px 20px  #613a43;
     margin:12px 0 0;
   }
   
@@ -44,7 +62,7 @@
   
   h3 {
     font-size: 1.25em; /* 20px/16px  */
-    color: #48525c;
+    color: #e3bab3;
     line-height: 1.2;
     margin-bottom: 1.7em; /* 34px */
   }
@@ -55,8 +73,10 @@
   }
   
   ul,
-  ol {
+  ol, li {
     margin: 30px 0;
+    list-style: none;
+    list-style-type: none; 
   }
   
   li {
@@ -64,53 +84,51 @@
   }
 
   a:link, a:visited {
-    background-color: #1a8156;
-    color: white;
+    background-color: #849974;
+    color: #e9dccd;
     padding: 14px 25px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 
 
 a:hover, a:active {
-    background-color: rgb(17, 58, 33);
-    color: rgb(29, 216, 38);
+    background-color: #613a43;
+    color: #e3bab3;
 }
   
-  /* Pseudo-classes ------------------ */
-  
-  
-  a:hover {
-    color: rgba(37, 117, 21, 0.4);
-  }
-  
-  a:active {
-    color: rgb(41, 90, 29);
-  }
   
   /* Main Styles --------------------- */
   
-  .main-nav,
-  a {
-      float: left;
-      display: inline-block;
-  }
 
-  .main-header {
-    padding-top: 170px;
-    height: 850px;
-    
-    background-size: cover;
-    
-  }
+  header {
+    padding-bottom: 15px;
+    height: 45px;
+    }
   
+  #background {
+    background: url("../img/trial_background.jpg") no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+      }
+
+      #skills {
+        background: url("../img/clouds.jpg") no-repeat;
+        overflow: hidden;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+          }
+
   .title {
-    color: white;
+    color: #e9dccd;
     font-size: 1.625rem; /* 26px/16px */
     letter-spacing: .065em;
     font-weight: 200;
     border-bottom: 2px solid;
+    padding-top: 15px;
     padding-bottom: 10px;
   }
   
@@ -126,8 +144,8 @@ a:hover, a:active {
   }
   
   .primary-content {
-      padding-top: 25px;
-    padding-bottom: 95px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   
 
@@ -142,8 +160,7 @@ a:hover, a:active {
   .main-footer {
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color:  rgba(24, 75, 14, 0.4);
-    margin-top: 60px;
+    background-color:  #36384c;
     text-align: center;
      }
   
@@ -151,23 +168,9 @@ a:hover, a:active {
   /* Layout Styles ------------------ */
   
   .primary-content {
-    width: 75%;
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
-    max-width: 960px;
-  }
-  
-  .iso {
-    color: white;
-    text-align: left;
-    padding: 18% 24%;
-    border-top: 10px solid #147028;
-    margin: 105px 0 60px;
-    background: #434a52 url('../img/bear.jpg') no-repeat center;
-    background-size: cover;
-    box-shadow: inset 0px 0px 50px 10px rgba(0,0,0, 1);
-  border-radius: 10px;
   }
   
   .arrow {
@@ -201,22 +204,31 @@ a:hover, a:active {
   /* Media Queries ------------------ */
   
   @media (max-width: 960px) {
-  body {
-  background: royalblue;}
-  }
+    body {
+  background: #849974;}
   
+  .main-header,
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: row;
+		align-items: center;
+	}
+
+}
   
-  @media (max-width: 480px){
-  body {
-  background: darkred;
+  @media (min-width: 480px){
+    body {
+  background: #613a43;
   }
   }
   
   @media (min-width: 481px) and (max-width: 700px) {
   body {
-  color: seagreen;
+  color: #e3bab3;
   }
     p{
-    color: white;
+    color: #e9dccd;
     }
   }
