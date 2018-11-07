@@ -1,12 +1,40 @@
 
+.main-image {
+
+}
+
 .main-nav {
 	display: flex;
-	flex-direction: row;
-  min-height: 10vh;
+  flex-direction: row;
+  margin: 0 6px;
+  /* min-height: 10vh; */ */
   align-items: center;
   justify-content: center;
-  padding-bottom: 2em;
-  background-color: #36384c;
+  /* padding-bottom: 2em; */
+  background-color: transparent;
+}
+
+/* The navigation bar */
+.main-nav {
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.main-nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 .resume {
@@ -15,6 +43,10 @@
 
 #title {
   margin-top: 2em;
+}
+
+.paragraph-section {
+  color: whitesmoke;
 }
 
 /* Base Styles -------------------- */
@@ -35,21 +67,9 @@
   
   h1 {  
     font-size: 5.625rem; /* 90px/16px  */
-    color: #e3bab3;
+    color: #ada9a9;
     font-weight: normal;
     line-height: 1.3;
-    text-shadow: 0 1px 0 #e3bab3,
-                 0 2px 0 #e3bab3,
-                 0 3px 0 #e3bab3,
-                 0 4px 0 #e3bab3,
-                 0 5px 0 #e3bab3,
-                 0 6px 1px #613a43,
-                 0 0 5px #613a43,
-                 0 1px 3px  #613a43,
-                 0 3px 5px  #613a43,
-                 0 5px 10px  #613a43,
-                 0 10px 10px  #613a43,
-                 0 20px 20px  #613a43;
     margin:12px 0 0;
   }
   
@@ -84,16 +104,16 @@
   }
 
   a:link, a:visited {
-    background-color: #849974;
+    background-color: transparent;
     color: #e9dccd;
-    padding: 14px 25px;
+    /* padding: 14px 25px; */
     text-decoration: none;
     display: inline-block;
 }
 
 
 a:hover, a:active {
-    background-color: #613a43;
+    background-color: transparent;
     color: #e3bab3;
 }
   
@@ -107,20 +127,45 @@ a:hover, a:active {
     }
   
   #background {
-    background: url("../img/trial_background.jpg") no-repeat;
+    background: url("../img/stairs.jpg") no-repeat;
     overflow: hidden;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
+    text-align: center;
       }
 
       #skills {
-        background: url("../img/clouds.jpg") no-repeat;
+        background: url("../img/houses.jpg") no-repeat;
         overflow: hidden;
         background-size: cover;
         width: 100%;
         min-height: 100vh;
           }
+
+            #resume {
+              background: url("../img/bricks.jpg") no-repeat;
+              overflow: hidden;
+              background-size: cover;
+              width: 100%;
+              height: 100vh;
+                  }
+
+                  #about {
+                    background: url("../img/houses.jpg") no-repeat;
+                    overflow: hidden;
+                    background-size: cover;
+                    width: 100%;
+                    height: 100vh;
+                        }
+
+                  #ward {
+                    background: url("../img/bricks.jpg") no-repeat;
+                    overflow: hidden;
+                    background-size: cover;
+                    width: 100%;
+                    height: 100vh;
+                        }
 
   .title {
     color: #e9dccd;
@@ -144,8 +189,9 @@ a:hover, a:active {
   }
   
   .primary-content {
-    padding-top: 15px;
+    padding-top: 200px;
     padding-bottom: 15px;
+    color: whitesmoke;
   }
   
 
