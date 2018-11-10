@@ -1,5 +1,11 @@
 
 .main-image {
+height: 7em;
+width: 7em;
+margin-top: 10em;
+border-radius: 50%;
+top: 50%;
+left: 50%;
 
 }
 
@@ -12,6 +18,9 @@
   justify-content: center;
   /* padding-bottom: 2em; */
   background-color: transparent;
+  color: #ced3db;
+  font-size: 1.5em;
+
 }
 
 /* The navigation bar */
@@ -31,6 +40,40 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+
+.right-float {
+  float: right;
+}
+
+.paragraph-section-L {
+float: left;
+text-align: left;
+position: relative;
+font-size: 1.25em;
+
+}
+
+.paragraph-section-R {
+  float: right;
+  text-align: right;
+  position: relative;
+  color: white;
+  font-size: 1.25em;
+
+  }
+
+.right-float-img {
+  float: right;
+}
+
+.left-float-img {
+  float: left;
+  size: .25em;
+}
+
+/* p {
+  max-width: 50em;
+} */
 
 /* Main content */
 .main {
@@ -82,7 +125,7 @@
   
   h3 {
     font-size: 1.25em; /* 20px/16px  */
-    color: #e3bab3;
+    color: #a7b3c6;
     line-height: 1.2;
     margin-bottom: 1.7em; /* 34px */
   }
@@ -105,7 +148,7 @@
 
   a:link, a:visited {
     background-color: transparent;
-    color: #e9dccd;
+    color: #ada9a9;
     /* padding: 14px 25px; */
     text-decoration: none;
     display: inline-block;
@@ -114,7 +157,7 @@
 
 a:hover, a:active {
     background-color: transparent;
-    color: #e3bab3;
+    color: #a7b3c6;
 }
   
   
@@ -208,6 +251,7 @@ a:hover, a:active {
     padding-bottom: 1em;
     background-color:  #36384c;
     text-align: center;
+    color:  whitesmoke;
      }
   
   
