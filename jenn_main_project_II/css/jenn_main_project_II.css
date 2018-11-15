@@ -1,5 +1,5 @@
 
-.main-image {
+.mainImage {
 height: 7em;
 width: 7em;
 margin-top: 10em;
@@ -9,11 +9,11 @@ left: 50%;
 
 }
 
-.main-nav {
+.mainNav {
 	display: flex;
   flex-direction: row;
   margin: 0 6px;
-  /* min-height: 10vh; */ */
+  /* min-height: 10vh;  */
   align-items: center;
   justify-content: center;
   /* padding-bottom: 2em; */
@@ -24,7 +24,7 @@ left: 50%;
 }
 
 /* The navigation bar */
-.main-nav {
+.mainNav {
   overflow: hidden;
   background-color: transparent;
   position: fixed; /* Set the navbar to fixed position */
@@ -33,7 +33,7 @@ left: 50%;
 }
 
 /* Links inside the navbar */
-.main-nav a {
+.mainNav a {
   float: left;
   display: block;
   text-align: center;
@@ -45,22 +45,26 @@ left: 50%;
   float: right;
 }
 
-.paragraph-section-L {
+.paragraph-section {
 float: left;
 text-align: left;
 position: relative;
 font-size: 1.25em;
-
 }
 
-.paragraph-section-R {
+.form1 {
+  display: block;
+  text-align: center;
+  }
+
+/* .paragraph-section-R {
   float: right;
   text-align: right;
   position: relative;
   color: white;
   font-size: 1.25em;
 
-  }
+  } */
 
 .right-float-img {
   float: right;
@@ -94,7 +98,7 @@ font-size: 1.25em;
 
 /* Base Styles -------------------- */
 
-* {
+  contact-form{
     box-sizing: border-box;
   }
   
@@ -187,14 +191,14 @@ a:hover, a:active {
           }
 
             #resume {
-              background: url("../img/bricks.jpg") no-repeat;
+              background: url("../img/gray_image.jpg") no-repeat;
               overflow: hidden;
               background-size: cover;
               width: 100%;
               height: 100vh;
                   }
 
-                  #about {
+                  #contact {
                     background: url("../img/houses.jpg") no-repeat;
                     overflow: hidden;
                     background-size: cover;
@@ -202,8 +206,8 @@ a:hover, a:active {
                     height: 100vh;
                         }
 
-                  #ward {
-                    background: url("../img/bricks.jpg") no-repeat;
+                  #about {
+                    background: url("../img/gray_image.jpg") no-repeat;
                     overflow: hidden;
                     background-size: cover;
                     width: 100%;
@@ -249,7 +253,7 @@ a:hover, a:active {
   .main-footer {
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color:  #36384c;
+    background-color:  #696969;
     text-align: center;
     color:  whitesmoke;
      }
@@ -262,10 +266,86 @@ a:hover, a:active {
     padding-right: 50px;
     margin: auto;
   }
+
+  .contact_form {
+    box-sizing: border-box;
+    max-width: 20em;
+    border-style: outset;
+    border-color: black;
+    max-height: 30em;
+    padding: 20px 24px;
+    background: #f4f7f8;
+    color: black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #formSubmitted {
+  color: white;
+  background-color: #ccccff;
+  padding: 15px;
+  border-radius: 5px;
+  display: block;
+  width: calc(100% - 100px);
+  margin-bottom: 40px;
+}
   
-  .arrow {
-    width: 50px;
-    margin-top: 150px;
+  .btn {
+    font-size: 0.5em;
+    font-weight: 400;
+    cursor: pointer; 
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: .5em 0 1em;
+    text-transform: uppercase;
+    background-color: #696969; 
+  }
+  .btn:hover { 
+    opacity: .75; 
+  }
+ 
+  .error {
+    background-color: #ff784f; 
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5em; 
+  }
+  label:last-of-type {
+   margin-top: 1.1em;
+  }
+  input,
+  textarea  {
+    outline: 0;
+    border: none;
+    padding: 5px;
+    border-radius: .3em;
+    border-bottom: 3px solid rgba(0,0,0,0.05);
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    font-size: 1em;
+    color: #222;
+    font-weight: 300; 
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.2em;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
+  }
+  form > a {
+    font-size: .85em;
+  }
+  input[type="checkbox"] + label {
+    font-weight: 300;
+    font-size: .85em;
+    display: inline;
+    padding-left: 5px;
   }
   
   /* Floated Columns ------------------ */
@@ -290,35 +370,33 @@ a:hover, a:active {
     display: table;
     clear: both;
   }
-  
+
+
+ 
   /* Media Queries ------------------ */
   
   @media (max-width: 960px) {
+    
     body {
   background: #849974;}
-  
+
   .main-header,
-	.main-nav {
+	.mainNav {
 		display: flex;
 	}
 	.main-header {
 		flex-direction: row;
 		align-items: center;
-	}
-
-}
+  }}
   
   @media (min-width: 480px){
     body {
   background: #613a43;
-  }
-  }
+  }}
+  
   
   @media (min-width: 481px) and (max-width: 700px) {
-  body {
-  color: #e3bab3;
-  }
-    p{
-    color: #e9dccd;
+      #container {
+        max-width: 550px;
+      }
     }
-  }
