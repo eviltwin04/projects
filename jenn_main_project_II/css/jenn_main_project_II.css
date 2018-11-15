@@ -18,10 +18,12 @@ background: url("../img/Jenn.png") no-repeat;
   /* min-height: 10vh;  */
   align-items: center;
   justify-content: center;
-  /* padding-bottom: 2em; */
+  /* padding-left: 2em; 
+  padding-right: 2em;  */
   background-color: transparent;
   color: #ced3db;
   font-size: 1.5em;
+  z-index: 2;
 
 }
 
@@ -32,6 +34,7 @@ background: url("../img/Jenn.png") no-repeat;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  
 }
 
 /* Links inside the navbar */
@@ -59,14 +62,6 @@ font-size: 1.25em;
   text-align: center;
   }
 
-/* .paragraph-section-R {
-  float: right;
-  text-align: right;
-  position: relative;
-  color: white;
-  font-size: 1.25em;
-
-  } */
 
 .right-float-img {
   float: right;
@@ -76,10 +71,6 @@ font-size: 1.25em;
   float: left;
   size: .25em;
 }
-
-/* p {
-  max-width: 50em;
-} */
 
 /* Main content */
 .main {
@@ -191,6 +182,8 @@ a:hover, a:active {
         background-size: cover;
         width: 100%;
         min-height: 100vh;
+        
+       
           }
 
             #resume {
@@ -199,6 +192,7 @@ a:hover, a:active {
               background-size: cover;
               width: 100%;
               height: 100vh;
+              
                   }
 
                   #contact {
@@ -207,6 +201,7 @@ a:hover, a:active {
                     background-size: cover;
                     width: 100%;
                     height: 100vh;
+                    
                         }
 
                   #about {
@@ -215,6 +210,7 @@ a:hover, a:active {
                     background-size: cover;
                     width: 100%;
                     height: 100vh;
+                    
                         }
 
   .title {
@@ -374,9 +370,151 @@ a:hover, a:active {
 
  
   /* Media Queries ------------------ */
+
+  /*----- Toggle Button -----*/
+.toggle-nav {
+	display:none;
+}
+
+/*----- Menu -----*/
+@media screen and (min-width: 860px) {
+	.mainNav {
+	width:100%;
+	padding:10px 18px;
+	box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+	border-radius:3px;
+	
+	}
+}
+
+.mainNav ul {
+	display:inline-block;
+}
+
+.mainNav li {
+	margin:0px 50px 0px 0px;
+	float:left;
+	list-style:none;
+	font-size:17px;
+}
+
+.mainNav li:last-child {
+	margin-right:0px;
+}
+
+.mainNav a {
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+	color:#777;
+	transition:color linear 0.15s;
+}
+
+.mainNav a:hover, .mainNav .current-item a {
+	text-decoration:none;
+	color:#66a992;
+}
+
+/*----- Search -----*/
+.search-form {
+	float:right;
+	display:inline-block;
+}
+
+.search-form input {
+	width:200px;
+	height:30px;
+	padding:0px 8px;
+	float:left;
+	border-radius:2px 0px 0px 2px;
+	font-size:13px;
+}
+
+.search-form button {
+	height:30px;
+	padding:0px 7px;
+	float:right;
+	border-radius:0px 2px 2px 0px;
+	background:#66a992;
+	font-size:13px;
+	font-weight:600;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.3);
+	color:#fff;
+}
+
+/*----- Responsive -----*/
+@media screen and (max-width: 1150px) {
+	.wrap {
+		width:90%;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.search-form input {
+		width:120px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.mainNav {
+		position:relative;
+		display:inline-block;
+	}
+
+	.mainNav ul.active {
+		display:none;
+	}
+
+	.mainNav ul {
+		width:100%;
+		position:absolute;
+		top:120%;
+		left:0px;
+		padding:10px 18px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+	}
+
+	.mainNav ul:after {
+		width:0px;
+		height:0px;
+		position:absolute;
+		top:0%;
+		left:22px;
+		content:'';
+		transform:translate(0%, -100%);
+		border-left:7px solid transparent;
+		border-right:7px solid transparent;
+		border-bottom:7px solid #303030;
+	}
+
+	.mainNav li {
+		margin:5px 0px 5px 0px;
+		float:none;
+		display:block;
+	}
+
+	.mainNav a {
+		display:block;
+	}
+
+	.toggle-nav {
+		padding:20px;
+		float:left;
+		display:inline-block;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#303030;
+		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+		color:#777;
+		font-size:20px;
+		transition:color linear 0.15s;
+	}
+
+
+}
   
   /* Target viewport sizes less than 576px */
-
+/* 
 @media (max-width:575px) {
   .mainNav {
     display: block;
@@ -398,52 +536,4 @@ a:hover, a:active {
    padding-left: 0%;
     
 }
-/* Target viewport sizes 576px and wider */
-
-
-  .logo {
-    float: left;
-  }
-  nav {
-    margin-top: 24px;
-  }
-  nav li {
-    display: inline-block;
-    margin: 0 0.45em;
-  }
-  h2 {
-    margin-bottom: 1.5em;
-  }
-
-
-/* Target a viewport range wider than 575px and narrower than 992px */
-
-
-  nav {
-    float: left;
-    margin-left: 20px;
-  }
-
-
-/* Target viewport sizes 768px and wider */
-
-
-  .articles {
-    float: left;
-    width: 65%;
-  }
-  aside {
-    float: right;
-    width: 30%;
-  }
-
-
-/* Target viewport sizes 992px and wider */
-
-
-  nav {
-    float: right;
-  }
-
-
-  
+ 

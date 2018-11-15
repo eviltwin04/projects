@@ -1,3 +1,12 @@
+$(document).ready(function() {
+	$('.toggle-nav').click(function(e) {
+		$(this).toggleClass('active');
+		$('.mainNav ul').toggleClass('active');
+
+		e.preventDefault();
+	});
+});
+
 // This javascript is for my main headers to change from upper to lowercase 
 
 var header2 = document.getElementsByTagName('h2')
@@ -19,6 +28,7 @@ header2[i].addEventListener('mouseout' , () => {
 function button1() {
     $('#formSubmitted').show().slideDown(700).delay(2000).slideUp(700);
 }
+
 
 
 // This javascript is for my Resume PDF checkbox
