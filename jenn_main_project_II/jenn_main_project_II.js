@@ -1,13 +1,14 @@
+
 $(document).ready(function() {
-	$('.toggle-nav').click(function(e) {
-		$(this).toggleClass('active');
+	$('.togglenav').click(function(e) {
+		$('togglenav').toggleClass('active');
 		$('.mainNav ul').toggleClass('active');
 
 		e.preventDefault();
 	});
 });
 
-// This javascript is for my main headers to change from upper to lowercase 
+// // This javascript is for my main headers to change from upper to lowercase 
 
 var header2 = document.getElementsByTagName('h2')
 // var btn= document.getElementsByClassName('btn')

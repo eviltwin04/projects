@@ -332,7 +332,6 @@ a:hover, a:active {
     width: 100%;
     height: auto;
     margin-bottom: 1.2em;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
   }
   form > a {
     font-size: .85em;
