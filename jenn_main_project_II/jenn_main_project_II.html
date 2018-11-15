@@ -11,12 +11,14 @@
   <div id="background">
   <header id="main-header" class="main-header">
     <div class="container">
-        <img src="img/woman.jpeg" alt="Jennifer Ward, web developer" class="mainImage">
+
+        <img src="img/Jenn.jpg" alt="Jennifer Ward, web developer" class="mainImage" id="Jennifer">
+        
       <div class="mainNav" id="nav1">
         <li><a href="#about" input type="submit">About Me</a></li>
         <li><a href="#skills" input type="submit">Skills</a></li>
         <li><a href="#ward" input type="submit">Jennifer Ward</a></li>
-        <li><a href="'http://www.bellevue.edu/student-support/career-services/pdfs/resume-samples.pdf'>jQuery Cheatsheet" input type="submit">Resume</a></li>
+        <li><a href="#resume" input type="submit">Resume</a></li>
         <li><a href="#contact" input type="submit">Contact</a></li>
         </ul>
       </div> <!-- End ul div -->
@@ -27,7 +29,7 @@
       
     
     <h1>Hello! I'm Jenn!</h1>
-    <div id="formSubmitted">Thank you! Your comments have been submitted!</div>
+    
 
     </div>
    
@@ -62,18 +64,27 @@
 <div class= "paragraph-section" id="resume">
     <h2>Resume</h2>
   <p>
-    and this paragraph is going to be all about what I'm looking for</a>.
+   Please, have a look at my resume!</a>
   </p>
 
+  Profile:
+  I am a professional individual with extensive experience testing and researching in
+  the production and QA environments. I am highly motivated and enjoy trouble
+  shooting, problem solving and critical thinking. I am able to focus intensely on
+  projects and procure the necessary information required for their completion. I am
+  able to work well under time constraints. I am very familiar with the functionality of
+  all ZirMed applications and able to troubleshoot issues that arise with them.</p>
 
-<!-- <a class="" href="#">Place saver text</a> -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla lorem, lobortis vitae tempus sed, ullamcorper in enim. Aenean nec purus justo. Mauris eget sapien at orci consectetur venenatis. Nulla eu facilisis risus. Suspendisse ex sapien, bibendum sed tellus non, egestas auctor justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc placerat tortor eros, in dictum libero pharetra ut. Nam faucibus nisl sit amet odio consequat, eu aliquam mauris hendrerit. Sed interdum, nulla ut pellentesque euismod, urna tellus vestibulum est, eget lobortis libero diam in odio. Mauris at est at nibh mattis varius a aliquam turpis. Phasellus interdum posuere urna, eu ultrices elit eleifend ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce accumsan velit eget arcu fermentum, ac mollis felis ultrices. Praesent facilisis rhoncus dignissim.
+  <li><a href='Documents/Resume.docx'>Jennifer Ward's Resume Word Format</a></li>
+  <li><a href='Documents/Resume.pdf'>Jennifer Ward's Resume PDF Format</a></li>
 
-    Praesent ut arcu elit. Nulla dapibus viverra tellus, a sodales dui vehicula nec. Duis diam mi, tincidunt sed commodo nec, porta sed massa. Aenean ut diam augue. Integer maximus fermentum augue, a congue urna rutrum ut. Aliquam dolor arcu, suscipit nec vehicula ac, volutpat vitae mi. Vivamus viverra ex tortor, sit amet bibendum orci vulputate eget. Fusce maximus tincidunt justo. Proin vitae velit at urna ullamcorper maximus in vitae felis. In hac habitasse platea dictumst. Phasellus vel sem leo. Nunc tincidunt risus turpis, vitae molestie enim efficitur ut. Aliquam augue justo, dictum quis sapien sed, ornare dignissim nibh. Quisque convallis velit urna, ut iaculis nibh aliquet ac.</p>
+  <label><input type='checkbox'> Allow PDF downloads</label>
+
 </div>
 </div>
 
 <div class= "form1" id="contact">
+    <div id="formSubmitted">Thank you! Your comments have been submitted!</div>
     <h2>Contact</h2>
 		<form class="contact_form" id="form">
 
@@ -88,7 +99,7 @@
      	<label for="msg">Message:</label>			
  			<textarea id="msg" rows="4"></textarea>
 			
-		  <input class="btn" type="submit" value="Submit" id="button1">
+		  <input class="btn" onclick="button1()" type="submit" value="Submit">
 		</form>
 	</div>
     </div>

@@ -6,8 +6,10 @@ margin-top: 10em;
 border-radius: 50%;
 top: 50%;
 left: 50%;
+background: url("../img/Jenn.png") no-repeat;
 
 }
+
 
 .mainNav {
 	display: flex;
@@ -110,6 +112,7 @@ font-size: 1.25em;
   h1, 
   h2 {
   font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
   }
   
   h1 {  
@@ -287,8 +290,9 @@ a:hover, a:active {
   padding: 15px;
   border-radius: 5px;
   display: block;
-  width: calc(100% - 100px);
+  width: calc(100%);
   margin-bottom: 40px;
+  display: none;
 }
   
   .btn {
@@ -307,10 +311,6 @@ a:hover, a:active {
     opacity: .75; 
   }
  
-  .error {
-    background-color: #ff784f; 
-  }
-
   label {
     display: block;
     margin-bottom: 0.5em; 
@@ -375,28 +375,75 @@ a:hover, a:active {
  
   /* Media Queries ------------------ */
   
-  @media (max-width: 960px) {
-    
-    body {
-  background: #849974;}
+  /* Target viewport sizes less than 576px */
 
-  .main-header,
-	.mainNav {
-		display: flex;
-	}
-	.main-header {
-		flex-direction: row;
-		align-items: center;
-  }}
+@media (max-width:575px) {
+  .mainNav {
+    display: block;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    
+  }
+
+  h1 {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 4em;
+    text-align: left;
+   padding-top: 1em;
+   padding-left: 0%;
+    
+}
+/* Target viewport sizes 576px and wider */
+
+
+  .logo {
+    float: left;
+  }
+  nav {
+    margin-top: 24px;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 0.45em;
+  }
+  h2 {
+    margin-bottom: 1.5em;
+  }
+
+
+/* Target a viewport range wider than 575px and narrower than 992px */
+
+
+  nav {
+    float: left;
+    margin-left: 20px;
+  }
+
+
+/* Target viewport sizes 768px and wider */
+
+
+  .articles {
+    float: left;
+    width: 65%;
+  }
+  aside {
+    float: right;
+    width: 30%;
+  }
+
+
+/* Target viewport sizes 992px and wider */
+
+
+  nav {
+    float: right;
+  }
+
+
   
-  @media (min-width: 480px){
-    body {
-  background: #613a43;
-  }}
-  
-  
-  @media (min-width: 481px) and (max-width: 700px) {
-      #container {
-        max-width: 550px;
-      }
-    }
