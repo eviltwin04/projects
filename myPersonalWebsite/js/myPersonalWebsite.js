@@ -17,12 +17,6 @@ function showSuccessMessage() {
 
 // This javascript is for my form
 
-function showSuccessMessage() {
-    $('#formSubmitted').show().slideDown(700).delay(2000).slideUp(700);
-}
-
-// This javascript is for my form
-
 $(function(){
     $('#emailButton').on('click', emailMe);
 });
