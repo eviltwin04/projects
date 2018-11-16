@@ -22,7 +22,6 @@
     padding-right: 2em;  */
     background-color: transparent;
     color: #ced3db;
-    font-size: 1.5em;
     z-index: 2;
   
   }
@@ -367,7 +366,7 @@
     margin:0px 50px 0px 0px;
     float:left;
     list-style:none;
-    font-size:17px;
+    font-size:23px;
   }
   
   .mainNav li:last-child {
@@ -376,7 +375,7 @@
   
   .mainNav a {
     text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-    color:#777;
+    color:#ada9a9;
     transition:color linear 0.15s;
   }
   
