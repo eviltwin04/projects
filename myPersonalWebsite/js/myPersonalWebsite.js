@@ -1,3 +1,5 @@
+// This javascript is for hamburger menu
+
 $(document).ready(function() {
 	$('.toggle-nav').click(function(e) {
 		$('.toggle-nav').toggleClass('active');
