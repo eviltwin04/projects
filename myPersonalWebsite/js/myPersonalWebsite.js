@@ -11,27 +11,33 @@ $(document).ready(function() {
 
 // This javascript is for my form submission announcement 
 
-function button1() {
+function showSuccessMessage() {
+    $('#formSubmitted').show().slideDown(700).delay(2000).slideUp(700);
+}
+
+// This javascript is for my form
+
+function showSuccessMessage() {
     $('#formSubmitted').show().slideDown(700).delay(2000).slideUp(700);
 }
 
 // This javascript is for my form
 
 $(function(){
-	$('#emailButton').on('click', emailMe);
+    $('#emailButton').on('click', emailMe);
 });
 
 function emailMe(){
-	var mailTo = 'mailto:wardjl1985@gmail.com?';
+    var mailTo = 'mailto:wardjl1985@gmail.com?';
   var subject = 'subject=Site Contact';
   if($('#contactMe').is(':checked')){
-  	subject += ' - Please Reply';
+      subject += ' - Please Reply';
   }
   subject = subject.replace(' ', '%20');
   var message = '&body=' + $('#msg').val() + '%0D%0A%0D%0A' + $('#name').val();
   window.location =  mailTo + subject + message;
+  showSuccessMessage();
 }
-
 
 // // This javascript is for my main headers to change from upper to lowercase 
 
