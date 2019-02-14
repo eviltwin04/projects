@@ -10,15 +10,25 @@ namespace TowerGame
     {
         public static void Main()
         {
-            Map map = new Map(8,5);
+            Map map = new Map(8, 5);
 
             try
-            { 
-            MapLocation mapLocation = new MapLocation(20, 20, map);
+            {
+                Path path
             }
-            catch(Exception ex)
+            }
+ 
+            catch(OutOfBoundsException ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            catch(TowerGameException)
+            {
+                Console.WriteLine("Unhandled TowerGameDefenseException");
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Unhandled Exception");
             }
             /*Point x = new MapLocation(4, 2);
 
