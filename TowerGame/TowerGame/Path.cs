@@ -9,6 +9,9 @@ namespace TowerGame
     class Path
     {
         private readonly MapLocation[] _path;
+
+        public int Length => _path.Length;
+
         public Path(MapLocation[] path)
         {
             _path = path;
@@ -20,6 +23,4 @@ namespace TowerGame
         }
     }
 }
-{
-    return (textColor = "red" < 0) ? textColor = "green";
-}
+
