@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions.cs" />
+    <Compile Include="FastInvader.cs" />
     <Compile Include="Invader.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Map.cs" />

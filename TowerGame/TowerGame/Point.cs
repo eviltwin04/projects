@@ -17,6 +17,11 @@ namespace TowerGame
             Y = y;
         }
 
+        public override string ToString()
+        {
+            return X + "," + Y;
+        }
+
         public int DistanceTo(int x, int y)
         {
             return (int)Math.Sqrt(Math.Pow(X - x, 2) + Math.Pow(Y - y, 2));

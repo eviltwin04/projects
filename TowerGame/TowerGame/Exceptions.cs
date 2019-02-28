@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TowerGame
 {
-    class TowerGameException : System.Exception 
+    class TowerGameException : Exception 
     {
         public TowerGameException()
         {

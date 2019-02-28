@@ -38,7 +38,7 @@ namespace TowerGame
                         Console.WriteLine("Shot at and hit an invader!");
                         if(invader.IsNeutralized)
                         {
-                            Console.WriteLine("Invader has been neutralized!");
+                            Console.WriteLine("Neutralized an invader at " + invader.Location + "!");
                         }
                     }
                     else
