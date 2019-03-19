@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="SaveTheHumans.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SaveTheHumans"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="1065">
+    <Page.Resources>
+        <ControlTemplate x:Key="EnemyTemplate" TargetType="ContentControl">
+            <Grid/>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid x:Name="___noName_" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition/>
+            <RowDefinition Height="160"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="startButton1" Content="Start!" HorizontalAlignment="Left" Margin="55,65,0,0" VerticalAlignment="Top" AllowDrop="True" RenderTransformOrigin="-0.182,0.312" Height="32" Grid.Row="2" Width="55"/>
+        <TextBlock x:Name="avoidThese" Text="Avoid These" TextWrapping="Wrap" VerticalAlignment="Bottom" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" Height="45" Grid.Row="1" RenderTransformOrigin="-0.185,0.556" HorizontalAlignment="Right" Grid.RowSpan="2" IsTextSelectionEnabled="True" Grid.ColumnSpan="2" CanDrag="True" FocusVisualSecondaryBrush="#FF0F0E0E"/>
+        <ProgressBar Grid.Column="1" Grid.Row="2" Height="20"/>
+        <ContentControl Template="{StaticResource EnemyTemplate}" Content="ContentControl" HorizontalAlignment="Left" Margin="1160,65,0,0" VerticalAlignment="Top" Grid.Column="1" Height="20" Grid.Row="2" Width="103" Grid.ColumnSpan="2" CanDrag="True"/>
+        <Canvas x:Name="playArea" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" CanDrag="True">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF7E7ACF" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="95,95,0,0" Text="Save the Humans" VerticalAlignment="Top" Height="50" Width="535" TextChanged="TextBox_TextChanged"/>
+        <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="AppBarButton" Margin="905,84,0,0" VerticalAlignment="Top" Grid.Column="1" Height="76" Grid.Row="2"/>
+        <Ellipse Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" Grid.RowSpan="3" VerticalAlignment="Top" Width="100" Fill="#FFF70D0D"/>
+
+    </Grid>
+</Page>
