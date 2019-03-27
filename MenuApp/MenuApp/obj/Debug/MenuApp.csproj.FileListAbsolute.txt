@@ -1,0 +1,10 @@
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\bin\Debug\MenuApp.exe.config
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\bin\Debug\MenuApp.exe
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\bin\Debug\MenuApp.pdb
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.csprojAssemblyReference.cache
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.Form1.resources
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.Properties.Resources.resources
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.csproj.GenerateResource.cache
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.csproj.CoreCompileInputs.cache
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.exe
+C:\Users\jennifer.ward\source\repos\MenuApp\MenuApp\obj\Debug\MenuApp.pdb
