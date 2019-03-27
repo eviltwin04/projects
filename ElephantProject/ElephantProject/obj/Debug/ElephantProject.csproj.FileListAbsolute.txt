@@ -1,0 +1,10 @@
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.csprojAssemblyReference.cache
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.Form1.resources
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.Properties.Resources.resources
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.csproj.GenerateResource.cache
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.csproj.CoreCompileInputs.cache
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\bin\Debug\ElephantProject.exe.config
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\bin\Debug\ElephantProject.exe
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\bin\Debug\ElephantProject.pdb
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.exe
+C:\Users\jennifer.ward\source\repos\ElephantProject\ElephantProject\obj\Debug\ElephantProject.pdb
