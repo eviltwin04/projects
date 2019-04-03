@@ -1,0 +1,10 @@
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\bin\Debug\TypingGame.exe.config
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\bin\Debug\TypingGame.exe
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\bin\Debug\TypingGame.pdb
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.csprojAssemblyReference.cache
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.Form1.resources
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.Properties.Resources.resources
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.csproj.GenerateResource.cache
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.csproj.CoreCompileInputs.cache
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.exe
+C:\Users\jennifer.ward\source\repos\TypingGame\TypingGame\obj\Debug\TypingGame.pdb
