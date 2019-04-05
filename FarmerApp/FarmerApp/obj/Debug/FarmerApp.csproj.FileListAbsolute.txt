@@ -1,0 +1,10 @@
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\bin\Debug\FarmerApp.exe.config
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\bin\Debug\FarmerApp.exe
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\bin\Debug\FarmerApp.pdb
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csprojAssemblyReference.cache
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.Form1.resources
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.Properties.Resources.resources
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.GenerateResource.cache
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.csproj.CoreCompileInputs.cache
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.exe
+C:\Users\jennifer.ward\source\repos\FarmerApp\FarmerApp\obj\Debug\FarmerApp.pdb
