@@ -13,6 +13,7 @@ namespace DinnerParty
     public partial class Form1 : Form
     {
             DinnerParty2 dinnerParty;
+            BirthdayParty birthdayParty;
 
             public Form1()
             {
@@ -20,12 +21,23 @@ namespace DinnerParty
             dinnerParty = new DinnerParty2((int)numericUpDown1.Value,
                            healthyBox.Checked, fancyBox.Checked);
             DisplayDinnerPartyCost();
+
+            birthdayParty = new BirthdayParty((int)numberBirthday.Value,
+                fancyBirthday.Checked, cakeWriting.Text);
+            DisplayBirthdayPartyCost();
             }
 
         private void DisplayDinnerPartyCost()
         {
             decimal Cost = dinnerParty.Cost;
             costLabel.Text = Cost.ToString("c");
+        }
+
+        private void DisplayBirthdayPartyCost()
+        {
+            decimal Cost = birthdayParty.Cost;
+            birthdayCost.Text = Cost.ToString("c");
+            tooLongLabel.Visible = birthdayParty.CakeWritingTooLong;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -59,6 +71,46 @@ namespace DinnerParty
         {
             dinnerParty.FancyDecorations = fancyBox.Checked;
             DisplayDinnerPartyCost();
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            birthdayParty.FancyBirthday = fancyBirthday.Checked;
+            DisplayBirthdayPartyCost();
+        }
+
+        private void numberBirthday_ValueChanged(object sender, EventArgs e)
+        {
+            birthdayParty.NumberOfPeople = (int)numberBirthday.Value;
+            DisplayBirthdayPartyCost();
+        }
+
+        private void cakeWriting_TextChanged(object sender, EventArgs e)
+        {
+            birthdayParty.CakeWriting = cakeWriting.Text;
+            DisplayBirthdayPartyCost();
+        }
+
+
+
+        private void tooLongLabel_Click(object sender, EventArgs e)
+        {
 
         }
     }
