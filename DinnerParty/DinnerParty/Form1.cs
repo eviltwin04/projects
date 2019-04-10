@@ -23,7 +23,7 @@ namespace DinnerParty
             DisplayDinnerPartyCost();
 
             birthdayParty = new BirthdayParty((int)numberBirthday.Value,
-                fancyBirthday.Checked, cakeWriting.Text);
+                fancyDecorations.Checked, cakeWriting.Text);
             DisplayBirthdayPartyCost();
             }
 
@@ -91,7 +91,7 @@ namespace DinnerParty
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            birthdayParty.FancyBirthday = fancyBirthday.Checked;
+            birthdayParty.FancyDecorations = fancyDecorations.Checked;
             DisplayBirthdayPartyCost();
         }
 
