@@ -1,0 +1,10 @@
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\bin\Debug\BeehiveMgmt.exe.config
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\bin\Debug\BeehiveMgmt.exe
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\bin\Debug\BeehiveMgmt.pdb
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.csprojAssemblyReference.cache
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.Form1.resources
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.Properties.Resources.resources
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.csproj.GenerateResource.cache
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.csproj.CoreCompileInputs.cache
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.exe
+C:\Users\jennifer.ward\source\repos\BeehiveMgmt\BeehiveMgmt\obj\Debug\BeehiveMgmt.pdb
